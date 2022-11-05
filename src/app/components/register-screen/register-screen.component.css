@@ -41,10 +41,7 @@
   justify-content: center;
 }
 .container .register-container footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
 }
 .container .register-container footer .row {
   display: flex;
@@ -56,7 +53,7 @@
   border: 1px solid rgb(122, 214, 245);
   border-radius: 8px;
   height: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "inter";
   font-size: medium;
   padding: 10px;
 }
@@ -70,7 +67,7 @@
   border: 1px solid rgb(122, 214, 245);
   border-radius: 8px;
   height: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Inter";
   font-size: medium;
   padding: 10px;
 }

@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: lightgray;
+}
+.user{
+    padding-left: 5rem;
+    span{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2rem;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
