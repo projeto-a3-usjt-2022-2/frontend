@@ -50,10 +50,27 @@
                 width: 10rem;
                 border: 1px solid rgb(122, 214, 245);
                 border-radius: 8px;
-                height: 30px;
+                // height: 30px;
                 font-family: 'inter';
                 font-size: medium;
                 padding: 10px;
+            }
+            button{
+                margin-left: 2.5rem;
+                width: 80%;
+                background-color:#2DBCFA;
+                border-radius: 5px;
+                height: 30px;
+                border: none;
+                color: white;
+                font-family: "Inter";
+                font-size: medium;
+                &:hover{
+                    opacity: 0.9;
+                }
+                &:active{
+                    transform: translate(0,1px)
+                }
             }
         }
         .row{
@@ -64,7 +81,6 @@
                 width: 10rem;
                 border: 1px solid rgb(122, 214, 245);
                 border-radius: 8px;
-                height: 30px;
                 font-family: 'Inter';
                 font-size: medium;
                 padding: 10px;
