@@ -1,35 +1,47 @@
-<nav>
-    <div class="user">
-        <span>BEM VINDO, GUILHERME HAIS    
-        </span>
-    </div>
-    <div class="buttons">
-        <img src="../../../assets/imagens/Vector.png" alt="config">
-        <img src="../../../assets/imagens/Component 1.png" alt="logout">
-    </div>
-</nav>
-<div class="containter">
+<div class="container">
     <section class="background">
         <img src="../../../assets/imagens/Background.png" alt="fundo">
     </section>
-    <div class="container">
+    <main>
         <section>
             <p>Para agendar uma nova consulta é simples. 
                 Basta preencher os seguintes dados</p>
             <form action="post">
-                <select name="convenio" id="convenio"></select>
-                <select name="especialidade" id="especialidade"></select>
-                <select name="clinica" id="clinica"></select>
-                <input type="text" class="medico">
-                <input type="date" name="data" id="data">
+                <div class="row">
+                    <span>Convênio</span>
+                    <select name="convenio" id="convenio"></select>
+                </div>
+                <div class="row">
+                    <span>Especialidade</span>
+                    <select name="especialidade" id="especialidade"></select>
+                </div>
+                <div class="row">
+                    <span>Clinica</span>
+                    <select name="clinica" id="clinica"></select>
+                </div>
+                <div class="row">
+                    <span>Médico</span>
+                    <select name="medico" id="medico"></select>
+                </div>
+                <div class="row">
+                    <span>Selecione a data</span>
+                    <input type="date" name="data" id="data">
+                </div>
             </form>
             <footer>
-                <div class="buttons_submit">
-                    <span>Horários disponíveis</span>
+                <span>Horários disponíveis</span>
+                <div class="buttons-submit">
+                    <button class="horarios">6:30</button>
+                    <button class="horarios">7:00</button>
+                    <button class="horarios">8:00</button>
+                    <button class="horarios">10:00</button>
+                    <button class="horarios">11:00</button>
+                </div>
+                <div class="buttons">
                     <button class="cancelar">Cancelar</button>
                     <button type="submit">Enviar</button>
                 </div>
             </footer>    
         </section>    
-    </div>
+    </main>
 </div>

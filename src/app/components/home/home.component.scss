@@ -1,21 +1,115 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-}
-.user{
-    padding-left: 5rem;
-    span{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 2rem;
-    }
-}
-.buttons{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding-right: 2rem;
-}
+
 .container{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    // padding-top: 15rem;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    p{
+        max-width: 60%;
+        color: #7E7E7E;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 0.3rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    input,select{
+        border: 1px solid rgb(122, 214, 245);
+        border-radius: 8px;
+        height: 30px;
+        font-family: "Inter";
+        font-size: medium;
+        padding: 18px;
+    }
+    span{
+        font-family: "Inter";
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    .buttons-submit{
+        display: flex;
+        gap: 1.5rem;
+        border: none;
+        .horarios{
+            padding: .6rem;
+            border: none;
+            width: 5rem;
+            font-size: 14px;
+            background-color: #7E7E7E;
+            border-radius: .5rem;
+            color: white;
+            font-family: "Inter";
+            &:hover{
+                opacity: 0.9;
+            }
+            &:active{
+                transform: translate(0,1px);
+                background-color: #13C725;
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 2rem;
+        .cancelar{
+            background-color: #C71313;
+            border: none;
+            border-radius: 0.3rem;
+            width: 15rem;
+            height: 2.68rem;
+            font-family: "inter";
+            color: white;
+            font-size: 14px;
+            &:hover{
+                opacity: 0.9;
+            }
+            &:active{
+                transform: translate(0,1px)
+            }
+        }
+        button[type=submit]{
+            background-color: #13C725;
+            border: none;
+            border-radius: 0.3rem;
+            width: 15rem;
+            height: 2.68rem;
+            font-family: "inter";
+            color: white;
+            font-size: 14px;
+            &:hover{
+                opacity: 0.9;
+            }
+            &:active{
+                transform: translate(0,1px)
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, LoginScreenComponent, RegisterScreenComponent, HomeComponent, NavbarComponent],
+  declarations: [AppComponent, LoginScreenComponent, RegisterScreenComponent, NavbarComponent,HomeComponent],
   imports: [BrowserModule, AppRoutingModule,HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
