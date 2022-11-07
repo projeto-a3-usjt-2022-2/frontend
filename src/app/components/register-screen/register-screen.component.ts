@@ -17,7 +17,7 @@ export class RegisterScreenComponent implements OnInit {
     name: string;
     lastname: string;
     cpf:string;
-    birthDate: any;
+    birthDate: string;
     sex: string;
     convenio: string;
     email: string;
@@ -32,8 +32,7 @@ export class RegisterScreenComponent implements OnInit {
   
         return (this.dataLogin = data);
       } catch (error: any) {
-  
-        
+        console.log(registerForm.name)
         this.errorLogin = error.response.data.message;
         
       }

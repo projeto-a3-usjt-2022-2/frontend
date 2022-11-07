@@ -12,11 +12,11 @@
                     <div class="row">
                         <div class="subtitle">
                             <span>Nome</span>
-                            <input type="text" name="nome" id="nome" class="info" ngModel>
+                            <input type="text" name="name" id="name" class="info" ngModel>
                         </div>
                         <div class="subtitle">
                             <span>Sobrenome</span>
-                            <input type="text" name="sobrenome" id="sobrenome" class="info" ngModel>
+                            <input type="text" name="lastName" id="lastName" class="info" ngModel>
                         </div>
                     </div>
                     <div class="row">
@@ -26,7 +26,7 @@
                         </div>
                         <div class="subtitle">
                             <span>Data de Nascimento</span>
-                            <input type="date" name="data" id="data" class="info" ngModel>
+                            <input type="date" name="birthDate" id="birthDate" class="info" ngModel>
                         </div>
                     </div>
                     <div class="row">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="subtitle">
                             <span>Convenio Médico</span>
-                            <select name="convenio" id="convenio" class="info" ngModel required>
+                            <select name="convenio" id="convenio" class="info" ngModel>
                                 <option value=""></option>
                                 <option value="sulamerica">SulAmerica</option>
                                 <option value="amil">Amil</option>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <button type="submit" (click)="registerUser(registerForm.value)"POST>Cadastrar</button>
-                    {{registerForm}}
+                    {{registerForm.value}}
                 </footer>
             </form>
         </div>

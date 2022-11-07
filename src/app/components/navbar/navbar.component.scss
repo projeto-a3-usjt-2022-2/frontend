@@ -2,13 +2,31 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    background-color: lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.quick-menu{
+    position: relative;
+    border: 1px solid;
+    width: 25rem;
+    height: 100%;
+    z-index: -1;
+    top: 1px;
+    background-color: rgba($color: red, $alpha: 1.0);
 }
 .user{
-    padding-left: 5rem;
+    display: flex;
+    gap: 3rem;
     span{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 2rem;
+    }
+    .quick-menu-btn{
+        &:hover{
+           cursor: pointer;
+        }
+        &:active{
+            transform: translate(1px,0px);
+        }
     }
 }
 .buttons{

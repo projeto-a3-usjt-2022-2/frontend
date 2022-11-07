@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  user = "LEONARDO"
   constructor() { }
-
   ngOnInit(): void {
   }
-
+  
+  openQuickMenu(){
+    console.log("vapo")
+  }
 }
